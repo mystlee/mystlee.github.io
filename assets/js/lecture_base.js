@@ -3,7 +3,35 @@ window.addEventListener('DOMContentLoaded', () => {
         .then(res => res.text())
         .then(html => {
             document
-                .getElementById('web-modal-placeholder')
+                .getElementById('web25-modal-placeholder')
+                .innerHTML = html;
+        });
+    fetch('/lecture/2025_spring/seminar.html')
+        .then(res => res.text())
+        .then(html => {
+            document
+                .getElementById('seminar25-modal-placeholder')
+                .innerHTML = html;
+        });
+    fetch('/lecture/2025_spring/java.html')
+        .then(res => res.text())
+        .then(html => {
+            document
+                .getElementById('java25-modal-placeholder')
+                .innerHTML = html;
+        });
+    fetch('/lecture/2025_spring/opensw.html')
+        .then(res => res.text())
+        .then(html => {
+            document
+                .getElementById('opensw25-modal-placeholder')
+                .innerHTML = html;
+        });
+    fetch('/lecture/2025_spring/cloud.html')
+        .then(res => res.text())
+        .then(html => {
+            document
+                .getElementById('cloud25-modal-placeholder')
                 .innerHTML = html;
         });
 });
